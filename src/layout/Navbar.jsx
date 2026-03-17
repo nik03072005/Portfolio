@@ -15,7 +15,7 @@ const navLinks = [
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
@@ -36,9 +36,12 @@ export const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "dark";
     setTheme(savedTheme);
     document.documentElement.setAttribute("data-theme", savedTheme);
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", savedTheme);
+    }
   }, []);
 
   const toggleTheme = () => {
