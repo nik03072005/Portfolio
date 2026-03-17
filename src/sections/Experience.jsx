@@ -1,19 +1,36 @@
 const experiences = [
   {
     period: "Aug 2025 — Present",
-    role: "Software Engineer Intern - Full Stack",
-    company: "Riyans WebTech (On-Site)",
-    description:
-      "Promoted from React & Node.js Intern\n\nEngineering production-grade full-stack applications using React, Node.js, and MongoDB.\n\nDeveloping secure RESTful APIs with Express and JWT authentication in Linux environments.\n\nImplementing scalable software solutions following engineering best practices.",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "Linux"],
+    role: "Full-Stack Developer",
+    company: "Riyans Webtech Solution (On-site)",
+    achievements: [
+      "Built and maintained scalable web applications using MERN and Django stacks",
+      "Implemented secure authentication with JWT + refresh tokens and role-based access",
+      "Designed REST APIs and optimized backend performance for faster response times",
+      "Worked with PostgreSQL and MongoDB, along with Linux-based deployments",
+    ],
+    technologies: [
+      "React",
+      "Node.js",
+      "Django",
+      "MongoDB",
+      "PostgreSQL",
+      "JWT",
+      "Linux",
+      "Docker",
+      "Nginx",
+    ],
     current: true,
   },
   {
     period: "Jun 2025 — Aug 2025",
-    role: "Software Engineering Intern (Team Lead)",
-    company: "IIT Jodhpur - ISRO RESPOND (Remote)",
-    description:
-      "Led a 5-member engineering team under Prof. Ashwin PATEL\n\nArchitected and developed automated analysis system for MIL-STD-1553B protocol compliance.\n\nEngineered backend APIs and interactive data visualization dashboards using Django, React, and D3.js.\n\nImplemented complex algorithms for timing analysis and protocol validation.",
+    role: "Software Development Engineering Intern (ISRO)",
+    company: "IIT Jodhpur (Remote)",
+    achievements: [
+      "Built a MIL-STD-1553 data analysis dashboard for jitter, periodicity, and deviation metrics",
+      "Generated automated graphical reports from real trace data using D3.js",
+      "Designed REST APIs with Django and PostgreSQL for data ingestion and analysis",
+    ],
     technologies: ["React", "Django", "PostgreSQL", "D3.js"],
     current: false,
   },
@@ -21,7 +38,7 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-32 relative overflow-hidden">
+    <section id="experience" className="py-24 sm:py-32 relative overflow-hidden">
       <div
         className="absolute top-1/2 left-1/4 w-96
        h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
@@ -29,7 +46,7 @@ export const Experience = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-12 sm:mb-16">
           <span
             className="text-secondary-foreground text-sm
            font-medium tracking-wider uppercase animate-fade-in"
@@ -37,14 +54,14 @@ export const Experience = () => {
             Career Journey
           </span>
           <h2
-            className="text-4xl md:text-5xl font-bold
+            className="text-3xl sm:text-4xl md:text-5xl font-bold
            mt-4 mb-6 animate-fade-in animation-delay-100
             text-secondary-foreground"
           >
-            Software Engineering{" "}
-            <span className="font-serif italic font-normal text-white">
+            Experience{" "}
+            <span className="font-serif italic font-normal text-primary">
               {" "}
-              Journey.
+              Snapshot
             </span>
           </h2>
 
@@ -52,13 +69,13 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            My professional growth as a software engineer—from building production systems to leading technical teams.
+            Production experience across full-stack delivery, backend systems, and deployment workflows.
           </p>
         </div>
 
         {/* Timeline */}
         <div className="relative">
-          <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]" />
+          <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]" />
 
           {/* Experience Items */}
           <div className="space-y-12">
@@ -79,8 +96,8 @@ export const Experience = () => {
                 <div
                   className={`pl-8 md:pl-0 ${
                     idx % 2 === 0
-                      ? "md:pr-16 md:text-right md:items-end"
-                      : "md:col-start-2 md:pl-16 md:text-right"
+                      ? "md:pr-16"
+                      : "md:col-start-2 md:pl-16"
                   }`}
                 >
                   <div
@@ -90,23 +107,18 @@ export const Experience = () => {
                       {exp.period}
                     </span>
                     <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
-                    <p className="text-muted-foreground">{exp.company}</p>
-                    <div className="text-sm text-muted-foreground mt-4 space-y-3">
-                      {typeof exp.description === "string" ? (
-                        exp.description.split("\n\n").map((para, i) => (
-                          <p key={i} className="leading-relaxed">
-                            {para}
-                          </p>
-                        ))
-                      ) : (
-                        exp.description
-                      )}
-                    </div>
-                    <div
-                      className={`flex flex-wrap gap-2 mt-4 ${
-                        idx % 2 === 0 ? "md:justify-end" : "md:justify-start"
-                      }`}
-                    >
+                    <p className="text-muted-foreground mb-4">{exp.company}</p>
+                    
+                    {/* Achievement Bullets */}
+                    <ul className="space-y-2.5 mt-4">
+                      {exp.achievements.map((achievement, i) => (
+                        <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
+                          <span className="text-primary mt-1.5 shrink-0">▹</span>
+                          <span className="flex-1">{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="flex flex-wrap gap-2 mt-4">
                       {exp.technologies.map((tech, techIdx) => (
                         <span
                           key={techIdx}
