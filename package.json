@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/update-sitemap.js && vite build",
+    "indexnow": "node scripts/indexnow-submit.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
