@@ -25,7 +25,7 @@ const experiences = [
   {
     period: "Jun 2025 — Aug 2025",
     role: "Software Development Engineering Intern (ISRO)",
-    company: "IIT Jodhpur (Remote)",
+    company: "IIT Jodhpur",
     achievements: [
       "Built a MIL-STD-1553 data analysis dashboard for jitter, periodicity, and deviation metrics",
       "Generated automated graphical reports from real trace data using D3.js",
