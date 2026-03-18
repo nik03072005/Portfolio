@@ -64,6 +64,7 @@ export const Navbar = () => {
         <a
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
+          aria-label="Nikhil Chandra home"
         >
           NC<span className="text-primary">.</span>
         </a>
