@@ -234,7 +234,7 @@ export const Hero = () => {
             <div className="flex flex-wrap items-center gap-4 animate-fade-in animation-delay-400">
               {[
                 { icon: Github, href: "https://github.com/nik03072005", label: "github" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/nikhil-se", label: "linkedin" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/nikhilchandra-tech", label: "linkedin" },
                 { icon: Code2, href: "https://leetcode.com/u/nikhil03072005/", label: "leetcode" },
               ].map((social, idx) => (
                 <a
