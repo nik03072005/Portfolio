@@ -1,16 +1,79 @@
-# React + Vite
+# Nikhil Chandra — Portfolio 💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live site: https://nikhilchandra.tech
 
-Currently, two official plugins are available:
+Because projects are meant to be shipped, not just run on localhost.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## What This Is
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is my personal developer portfolio — a collection of things I have built, solved, broken, and rebuilt better.
 
-## Expanding the ESLint configuration
+It reflects how I think about software:
+practical, scalable, and designed for real users — not just demos.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+No filler projects. No template dumps. Just actual work.
+
+---
+
+## Why It Exists
+
+Writing code is one thing.
+Shipping something usable is another.
+
+This site documents the latter.
+
+If you want to understand what I can build, how I structure systems, and what problems I enjoy solving — start here.
+
+---
+
+## What You Will Find Inside
+
+- Full-stack applications with real functionality
+- Backend-heavy projects and API work
+- Interactive dashboards and data visualization
+- Clean, responsive interfaces
+- Secure authentication systems
+
+Basically: software that does something useful.
+
+---
+
+## Where to See It Properly
+
+https://nikhilchandra.tech
+
+That is the intended experience — optimized, deployed, and production-ready.
+
+---
+
+## Running It Locally (If You Really Want To)
+
+```bash
+git clone https://github.com/nik03072005/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+Then open http://localhost:3000.
+
+But honestly, the live version is faster.
+
+---
+
+## About Me
+
+Full-stack developer focused on backend systems, performance, and maintainable architecture.
+B.Tech — Electronics Engineering.
+
+I prefer solving real problems over building throwaway demos.
+
+---
+
+## Contact
+
+- Email: nc03072005@gmail.com
+- LinkedIn: https://www.linkedin.com/in/nikhilchandra-tech
+- GitHub: https://github.com/nik03072005
