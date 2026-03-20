@@ -118,32 +118,32 @@ export const TechnicalDeepDive = () => {
                 icon: Zap,
                 title: "Containerization",
                 decision: "Dockerize services for consistent runtime environments",
-                reason: "Why: Eliminates machine-specific drift and simplifies deployment",
-                result: "Result: Predictable builds across dev, staging, and prod",
+                reason: "Eliminates machine-specific drift and simplifies deployment",
+                result: "Predictable builds across dev, staging, and prod",
                 color: "from-emerald-500 to-teal-500"
               },
               {
                 icon: Shield,
                 title: "CI/CD Automation",
                 decision: "Automated pipelines with GitHub Actions / Jenkins",
-                reason: "Why: Faster feedback loops and reliable release processes",
-                result: "Result: Safer deployments with fewer manual steps",
+                reason: "Faster feedback loops and reliable release processes",
+                result: "Safer deployments with fewer manual steps",
                 color: "from-sky-500 to-blue-500"
               },
               {
                 icon: Database,
                 title: "Infrastructure as Code",
                 decision: "Terraform basics for repeatable provisioning",
-                reason: "Why: Version-controlled infra enables faster iteration",
-                result: "Result: Consistent environments and easier rollback",
+                reason: "Version-controlled infra enables faster iteration",
+                result: "Consistent environments and easier rollback",
                 color: "from-amber-500 to-orange-500"
               },
               {
                 icon: Server,
                 title: "Secure Access",
                 decision: "JWT auth, RBAC patterns, and Nginx reverse proxy",
-                reason: "Why: Protects APIs while keeping routing and TLS clean",
-                result: "Result: Safer access and better operational control",
+                reason: "Protects APIs while keeping routing and TLS clean",
+                result: "Safer access and better operational control",
                 color: "from-slate-600 to-slate-500"
               }
             ].map((item, idx) => (
