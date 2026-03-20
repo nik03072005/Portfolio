@@ -386,7 +386,12 @@ export const Projects = () => {
 
         {/* View More CTA */}
         <div className="text-center mt-16 animate-fade-in animation-delay-600 flex flex-wrap items-center justify-center gap-4">
-          <AnimatedBorderButton>
+          <AnimatedBorderButton
+            as="a"
+            href="https://github.com/nik03072005"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             View All on GitHub
             <Github className="w-4 h-4" />
           </AnimatedBorderButton>
